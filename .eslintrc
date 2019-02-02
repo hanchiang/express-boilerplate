@@ -1,0 +1,25 @@
+{
+	"extends": "airbnb-base",
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true
+		}
+	},
+	"env": {
+		"es6": true,
+		"node": true,
+		"mocha": true
+	},
+	"rules": {
+		"arrow-parens": 1,
+		"no-restricted-syntax": 0,
+		"no-console": 0,
+		"comma-dangle": 0,
+		"prefer-promise-reject-errors": 1,
+		"object-property-newline": 1,
+		"no-use-before-define": 1,
+		"no-await-in-loop": 0,
+		"no-plusplus": 0
+	}
+}

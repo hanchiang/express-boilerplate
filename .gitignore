@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.idea
+haters/
+variables.env
+variables.env.now
+variables.env.test
+npm-debug.log

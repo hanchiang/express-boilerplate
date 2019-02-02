@@ -1,0 +1,39 @@
+{
+  "name": "express-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "10.15.1"
+  },
+  "scripts": {
+    "start": "node index.js | ./node_modules/bunyan/bin/bunyan",
+    "dev": "NODE_ENV=development nodemon index.js | ./node_modules/bunyan/bin/bunyan",
+    "test": "NODE_ENV=test mocha 'test/**/*.test.js' --timeout 5000",
+    "test-watch": "nodemon --exec \"npm test\"",
+    "lint": "./node_modules/.bin/eslint \"**/*.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "bunyan": "^1.8.12",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-request-id": "^1.4.1",
+    "helmet": "^3.13.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.8.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "supertest": "^3.1.0",
+    "loadtest": ""
+  }
+}
